@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New User</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <header>
+      <h1>Friends Ahoy!</h1>
+      <img src="logo.png" alt="Site Logo">
+      <nav id="menu">
+        <ul>
+          <li><a href="register.php">Register</a></li>
+          <li><a href="messages.php">Messages</a></li>
+          <li><a href="about.php">About</a></li>
+        </ul>
+      </nav>
+      <form action="login.php" method="post">
+        <label>Username:<input type="text" name="username"></label>
+        <label>Password:<input type="password" name="password"></label>
+      </form>
+    </header>
+    <aside id="friends">
+      <h2>Friends</h2>
+      <ul>
+         <li>
+           <a href="friend.php?id=jane">
+            <img src="photo.php?id=jane" alt="Jane Doe">Jane Doe
+           </a>
+         </li>
+         <li>
+           <a href="friend.php?id=louie">
+            <img src="photo.php?id=louie" alt="Louie Doe">Louie Doe
+           </a>
+         </li>
+         <li>
+           <a href="friend.php?id=mary">
+            <img src="photo.php?id=mary" alt="Mary Doe">Mary Doe
+           </a>
+         </li>
+      </ul>
+    </aside>
+    <section id="personal">
+      <h2>Who am I?</h2>
+      <ul>
+        <li>Name: John Doe</li>
+        <li>Age: 29</li>
+        <li>Country: Portugal</li>
+      </ul>
+    </section>
+    <section id="posts">
+      <h2>Posts</h2>
+      <article>
+        <h3>Something about life</h3>
+        <img src="image.php?id=24345" alt="Image for post 24345">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in ultricies mi. Sed fermentum vitae sapien sed aliquam. Maecenas a.</p>
+        <p>Quisque porttitor mollis tellus, ac sollicitudin ipsum tempus quis. Phasellus sit amet.</p>
+        <footer>
+          <a href="comments.php?id=24345">Comments (54)</a> <span class="date">@May 5th 2014</span>
+        </footer>
+      </article>  
+      <article>
+        <h3>Something about something else</h3>
+        <img src="image.php?id=23562" alt="Image for post 23562">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in ultricies mi. Sed fermentum vitae sapien sed aliquam. Maecenas a.</p>
+        <p>Quisque porttitor mollis tellus, ac sollicitudin ipsum tempus quis. Phasellus sit amet.</p>
+        <footer>
+          <a href="comments.php?id=23562">Comments (12)</a> <span class="date">@May 1st 20014</span>
+        </footer>
+      </article>  
+    </section>
+  </body>
+</html>
